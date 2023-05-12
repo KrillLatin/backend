@@ -4,11 +4,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
 public class ResponseText {
 
+   private String message;
    public String getMessage() {
       return message;
    }
@@ -17,5 +15,5 @@ public class ResponseText {
       this.message = message;
    }
 
-   private String message;
+
 }

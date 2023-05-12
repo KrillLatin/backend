@@ -5,29 +5,32 @@ import univ.tuit.krill_lotin.dto.CodeNameDto;
 import univ.tuit.krill_lotin.dto.ResponseText;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 @Service
 public class TranslatorService {
 
     private static final List<CodeNameDto> latin;
-
     private static final List<CodeNameDto> cyrillic;
-
     static {
         latin = new ArrayList<>();
         latin.add(new CodeNameDto("O'", "Ў"));
+        latin.add(new CodeNameDto("O’", "Ў"));
         latin.add(new CodeNameDto("O`", "Ў"));
         latin.add(new CodeNameDto("O‘", "Ў"));
         latin.add(new CodeNameDto("o'", "ў"));
+        latin.add(new CodeNameDto("o’", "ў"));
         latin.add(new CodeNameDto("o‘", "ў"));
         latin.add(new CodeNameDto("o`", "ў"));
 
         latin.add(new CodeNameDto("G'", "Ғ"));
+        latin.add(new CodeNameDto("G’", "Ғ"));
         latin.add(new CodeNameDto("G`", "Ғ"));
         latin.add(new CodeNameDto("G‘", "Ғ"));
         latin.add(new CodeNameDto("g`", "ғ"));
         latin.add(new CodeNameDto("g'", "ғ"));
+        latin.add(new CodeNameDto("g’", "ғ"));
         latin.add(new CodeNameDto("g‘", "ғ"));
 
         latin.add(new CodeNameDto("'", "ъ"));
@@ -57,7 +60,6 @@ public class TranslatorService {
         latin.add(new CodeNameDto("ya", "я"));
 
         latin.add(new CodeNameDto("E", "Э"));
-        latin.add(new CodeNameDto("E", "Э"));
         latin.add(new CodeNameDto("e", "е"));
 
         latin.add(new CodeNameDto("Ts", "Ц"));
@@ -73,6 +75,7 @@ public class TranslatorService {
         latin.add(new CodeNameDto("D", "Д"));
         latin.add(new CodeNameDto("d", "д"));
 
+        latin.add(new CodeNameDto("E", "E"));
         latin.add(new CodeNameDto("e", "е"));
 
         latin.add(new CodeNameDto("F", "Ф"));
@@ -140,6 +143,7 @@ public class TranslatorService {
         cyrillic.add(new CodeNameDto("ў", "o‘"));
         cyrillic.add(new CodeNameDto("ғ", "g‘"));
         cyrillic.add(new CodeNameDto("ъ", "'"));
+        cyrillic.add(new CodeNameDto("Ъ", "'"));
         cyrillic.add(new CodeNameDto("ш", "sh"));
         cyrillic.add(new CodeNameDto("ч", "ch"));
         cyrillic.add(new CodeNameDto("ё", "yo"));
